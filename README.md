@@ -1,6 +1,6 @@
 # solidityTasks-Web3Bridge
 
-The Project **TASKS** created by *Yours Sincerely* during my study of the *Web3Bridge* on becoming a SMART CONTRACT DEVELOPER at *<https://web3bridge.com/>* **WEB3BRIDGE** on *TRANSITIONING INTO INTO WEB3*
+The Project **TASKS** created by *Yours Sincerely* during my study of the *Web3Bridge* on becoming a SMART CONTRACT DEVELOPER at [**WEB3BRIDGE**](https://web3bridge.com) on *TRANSITIONING INTO INTO WEB3*
 
 ## Technologies
 
