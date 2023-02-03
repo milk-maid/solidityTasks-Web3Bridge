@@ -13,3 +13,4 @@ The following files are programme written during the building of the counter
 | Filename | Description |
 | -------- | ------------ |
 | `.sol` | the main file holding the olidity code |
+| `README.md` | the *MARKDOWN* file |
