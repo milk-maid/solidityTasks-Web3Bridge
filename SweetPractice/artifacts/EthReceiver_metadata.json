@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gas",
+						"type": "uint256"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidityTasks-Web3Bridge/SweetPractice/SendEth.sol": "EthReceiver"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidityTasks-Web3Bridge/SweetPractice/SendEth.sol": {
+			"keccak256": "0x061880db49ef79b27919ca79b0d37775a2fee338f875fee816bec5bb6bd2a0ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56606970e73fa9f23ca0c280e0d5ee35b4c9c1d8611426ac20d6633fd080653e",
+				"dweb:/ipfs/QmfAij833KefFX8SmGHJigoyGwDU7GZjy9hQoMuZAtwq4m"
+			]
+		}
+	},
+	"version": 1
+}

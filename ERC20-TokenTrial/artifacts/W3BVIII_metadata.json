@@ -1,0 +1,441 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Burn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "_mint",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer_",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "_allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "who",
+						"type": "address"
+					}
+				],
+				"name": "_balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_decimal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_burnValue",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name_",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol_",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "roqbellTheSage",
+			"details": "Implementation of the ERC20 specification The default value of {decimals} is 18. OpenZeppelin guidelines was followed. also an {Approval} event is emitted on calls that change state",
+			"kind": "dev",
+			"methods": {
+				"Approve(address,uint256)": {
+					"details": "this function is the main deal where the accounts are locked to  the ``caller``s address in the map else the destination will greatly vary  NOTE: If `amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval. Requirements: - `spender` cannot be the zero address.",
+					"params": {
+						"amount": "the total to be approed to the ``spender``'s account",
+						"spender": "the addressed to be approved by the caller and mapped to the caller "
+					}
+				},
+				"_allowance(address,address)": {
+					"details": "here permission is given bt the `owner` to the `spender`",
+					"params": {
+						"_owner": "the contract's owner at this instant",
+						"spender": "the address being allowed some funds and mapped to the `owner`"
+					}
+				},
+				"_balanceOf(address)": {
+					"details": "checks the balance of the address passed as argument",
+					"params": {
+						"who": "the address of the balance is to be checked"
+					}
+				},
+				"_decimal()": {
+					"details": "Returns the number of decimals used to get its user representation. The value of 18 was chosen to imitate the relationship between Ether and Wei This is the default value returned by this function, unless overridden"
+				},
+				"_totalSupply()": {
+					"details": "Returns the token total supply"
+				},
+				"burn(uint256)": {
+					"details": "Destroys `amount` tokens from `caller`, reducing the total supply. Emits a {Transfer} event with `to` set to the zero address. Requirements: - `account` cannot be the zero address. - `account` must have at least `amount` tokens.",
+					"params": {
+						"_burnValue": "the amount of tokens to be burnt out of circulation"
+					}
+				},
+				"constructor": {
+					"details": "Sets the values for {name}, {symbol}, {owner} and {decimal}. All four of these values are immutable: they can only be set once during construction.",
+					"params": {
+						"_name": ":Your desired token name",
+						"_symbol": ":token symbol"
+					}
+				},
+				"mint(address,uint256)": {
+					"details": "Creates `amount` tokens and assigns them to `account`, increasing the total supply. Emits a {Transfer} event with `from` set to the zero address. Requirements: - `account` cannot be the zero address.",
+					"params": {
+						"amount": "the total token to be minted",
+						"to": "address to be credited the amount minted"
+					}
+				},
+				"name_()": {
+					"details": "Returns the name of the token."
+				},
+				"symbol_()": {
+					"details": "Returns the symbol of the token,  usually a shorter version of the name by default"
+				},
+				"transfer(address,uint256)": {
+					"details": "a public function that transfers from msg.sender to `_to` & equivalent to the internal {_transfer} function it is REQUIRED that `_to` must not be zero address. & the caller(msg.sender) must have a balance of at least `amount`.",
+					"params": {
+						"_to": ":address to be credited by msg.sender",
+						"amount": ":total funds to be sent"
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "this is called if & only If the owner has allowed `from` Emits an {Approval} event indicating the updated allowance Requirements: - `from` and `to` cannot be the zero address. - `from` must have a balance of at least `amount`. - the caller must have allowance for ``from``'s tokens of at least `amount` i.e `from` must have allowed `msg.sender` some amount",
+					"params": {
+						"amount": "the funds being transferred",
+						"from": "address to be debited",
+						"to": "account to be credited"
+					}
+				}
+			},
+			"title": "ERC-20_TokenTrial",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"mint(address,uint256)": {
+					"notice": "- the ``caller`` must be the ``owner``"
+				}
+			},
+			"notice": "A simulation on the specifications of an ERC20 Token standard",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidityTasks-Web3Bridge/ERC20-TokenTrial/ERC20_TokenTrial.sol": "W3BVIII"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidityTasks-Web3Bridge/ERC20-TokenTrial/ERC20_TokenTrial.sol": {
+			"keccak256": "0xd110bdeccaf7559682ce91c1343a49b2ca957e1abfd5d1f6bf8defd34fe76342",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://95e46deb58f6b9477ead44787977c64dc9b074343eb5e43345c8d5c05f5c78b8",
+				"dweb:/ipfs/QmPE1v78do8hKwsGxfiy69vmwvvLQDRDdC3KCPBeDPhfqU"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_brand",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "addValues",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					}
+				],
+				"name": "getValues",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "brand",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MappingAndStruct.Car",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "the_roqbell (milk-maid)",
+			"kind": "dev",
+			"methods": {},
+			"title": "Testing some Mapping",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "see how structs work s",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidityTasks-Web3Bridge/SweetPractice/MappingAndStruct.sol": "MappingAndStruct"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidityTasks-Web3Bridge/SweetPractice/MappingAndStruct.sol": {
+			"keccak256": "0xedc9a4957e398f4d9ebb9aa5044544f98e002c23ff1422fa57c62720cd6c04d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7049e8ab14231640d5cb0e51967684f752bd257000495a196ed7996f12d7f667",
+				"dweb:/ipfs/QmTcT5zSLyGCbGu2qKR7YD7Q5M7ycwDAjo3mU5oMAX98et"
+			]
+		}
+	},
+	"version": 1
+}

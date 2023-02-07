@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_brand",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "createVar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVar",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "brand",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct StructTest.Car[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "the_roqbell (milk-maid)",
+			"kind": "dev",
+			"methods": {},
+			"title": "Testing some Struct",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "see how structs work s",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidityTasks-Web3Bridge/SweetPractice/StructArrayTest.sol": "StructTest"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidityTasks-Web3Bridge/SweetPractice/StructArrayTest.sol": {
+			"keccak256": "0xdd875b5d73d51da98754a6e6bdc0189100dac57cc796e9af5c7a926235deb509",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c013ddf326eca4fca5cb48b2d6c6e9f723f0d2045ba58bbff3b5324061f2d73",
+				"dweb:/ipfs/QmZw1Pm1Pjrbz3WnPJFAig6KnQMCaeP8R7tMp7oyMvgSKM"
+			]
+		}
+	},
+	"version": 1
+}

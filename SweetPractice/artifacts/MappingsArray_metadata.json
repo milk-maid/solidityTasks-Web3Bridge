@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_word1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_word2",
+						"type": "string"
+					}
+				],
+				"name": "addValues",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					}
+				],
+				"name": "getValues",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "the_roqbell (milk-maid)",
+			"kind": "dev",
+			"methods": {},
+			"title": "Testing some Mapping",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "see how structs work s",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidityTasks-Web3Bridge/SweetPractice/MappingArray.sol": "MappingsArray"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidityTasks-Web3Bridge/SweetPractice/MappingArray.sol": {
+			"keccak256": "0x0f1879e2d735ad4bbf22538fe00767798d6f6afcf120cb941a1fc34d0a8d18be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e0072e175013edc4aa4f1c30eb400afb5338236471e708e8c43fbcd421f3835",
+				"dweb:/ipfs/QmRdvubHTkC5gRr9WgXG7axLDn9NEAvLUzzAToxpHrHM2Z"
+			]
+		}
+	},
+	"version": 1
+}
