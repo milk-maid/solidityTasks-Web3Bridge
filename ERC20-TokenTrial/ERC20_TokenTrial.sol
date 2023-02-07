@@ -13,22 +13,40 @@ pragma solidity 0.8.17;
 
 contract W3BVIII {
 
+    /// @notice the owner of the contract at this instant
     address public owner;
 
+    /// @dev The Token Name
     string private name;
 
+    /// @dev The Token Symbol
     string private symbol;
 
+    /// @dev the token decimal part: to make it divisible
     uint256 private decimal;
 
+    /// @dev the total number of token supplied to the market
     uint private totalSupply;
 
+    /// @dev the balance of the mapped address
     mapping (address => uint256) private balanceOf;
 
+    /// @notice the amount alootted to a beneficiary by the owner mapped together
     mapping (address =>mapping(address => uint)) public allowance;
 
+    /// @param from the account debited
+    /// @param to the credited account
+    /// @param amount the transferred amount
     event transfer_(address indexed from, address to, uint amount);
+
+    /// @dev address(0) ensure you're not minting to this
+    /// @param to account to add the newly minted tokens
+    /// @param amount the amount of tokens minted
     event _mint(address indexed from, address to, uint amount);
+
+    /// @param from burn away from this address
+    /// @param value the amount of tokens to be burnt
+    /// @param message any other information
     event Burn(address indexed from, uint value, string message);
 
     /// @param _name :Your desired token name
